@@ -1,0 +1,148 @@
+:root {
+    --main-text: 'Source Sans Pro', sans-serif;
+}
+body {
+    margin: 0 auto;
+    padding: 0;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);  
+}
+#title {
+    text-transform: capitalize;
+    font-family: 'Comic Neue', cursive;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+#start {
+    border-radius: 10px;
+    background: crimson;
+    text-decoration: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+.back {
+    position: fixed;
+    top: 2rem;
+    left: 3rem;
+    color: #fff;
+    font-size: 3rem;
+}
+.container, .results-container {
+    width: 50vw;
+    border: 2px solid black;
+    background: white;
+    padding: 10px 5px;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.q-num {
+    text-transform: capitalize;
+    font-family: 'Rock Salt', cursive;
+    margin: 0;
+    padding: 0;
+}
+.intro {
+    margin-top: 0;
+}
+h2, li, p, .help, #results, #retake {
+    font-family: var(--main-text);
+    font-size: 1.25rem;
+    line-height: 28px;
+}
+.help, #results, #retake {
+    background: crimson;
+    color: #fff;
+    outline: none;
+}
+.help {
+    margin-top: 20px;
+}
+#results, #retake {
+    margin-bottom: 15px;
+}
+.guess {
+    margin-bottom: 10px;
+}
+ul {
+    padding-left: 0;
+}
+.clues li {
+    list-style: none;
+    margin: 0 auto;
+}
+.hide-1, .hide-2, .correct-answer, #final, #result, #retake {
+    display: none;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+#final p {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.nearly {
+    background: #40ff00;
+    animation: wiggle 0.3s;
+}
+.wrong {
+    background: red;
+    animation: wiggle 0.3s;
+}
+@keyframes wiggle {
+    0% {transform:rotate(10deg);}
+    50% {transform:rotate(-10deg);}
+    100% {transform:rotate(10deg);}
+}
+@media only screen and (max-width: 600px) {
+    .back {
+        top: 2.5rem;
+        left: 2rem;
+        font-size: 1.5rem;
+    }
+    .container, .results-container {
+        width: 65vw;
+    }
+    .q-num {
+        font-size: 1.5rem;
+    }
+    img {
+        width: 65vw;
+    }
+    #title {
+        font-size: 2rem;
+    }
+    h2, li, p, .help, #results, #retake {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    #start {
+       font-size: .5rem;
+    }
+    #result img{
+        width: 65vw;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    .container, .results-container {
+        width: 70vw;
+    }
+    h2, li, p, .help, #results, #retake {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .back {
+        top: 2.5rem;
+        left: 2rem;
+    }
+}
